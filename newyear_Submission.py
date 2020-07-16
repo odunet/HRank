@@ -31,6 +31,7 @@ def minimumBribes(q):
                         z += 1
                         q[i],q[j-1] = q[j-1],q[i]
         print(z)
+        return z,q
 #Not necessary, could be removed
     else:
         if q[0] == 1 and q[1] == 2:
@@ -46,5 +47,5 @@ if __name__ == '__main__':
         n = int(input())
 
         q = list(map(int, input().rstrip().split()))
-
-        minimumBribes(q)
+        print(minimumBribes(q))
+    #    minimumBribes(q)
