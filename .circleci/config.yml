@@ -19,7 +19,7 @@ jobs:
       - checkout  # checkout source code to working directory
       - run:
           command:
-             python sumi.test.py
+             python newyear_Submission.test.py
 
 workflows:
   main:
